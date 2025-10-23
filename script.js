@@ -5,7 +5,7 @@ const SCOPES =
   'user-read-playback-state user-modify-playback-state user-read-currently-playing';
 const RESPONSE_TYPE = 'token';
 
-let accessToken = 'BQBRLGaA4hZuksCB1PRsWJR-rsDvB5xO6jysS7JWpBYfzTUqCWeEFQePXDyRkHVy6TDci_GxyvZUFo7_z0ERwzAGz9XH334qGfQ-ncFllGf4MDxMK-ZZOoxfuI-P-AW6xzUkl9KlyG4iuA2LIrUX9R2LdRK7T0eY18vKSwUXs0-L1cyYEQSxz8oIGR1ylN724v7KCbdhi2ZMhIn2t1dlPG5CE7Mn2PGCH0AeQxZGClo96aeODLhGffcwrZmpp_nY8joeXOEjaOmfX6L-0YFLJNe6mb7My7YHRQIZuavt7Q-G0m7zrrhXnmZSqgUfOXDQrSdg1LGCdKPOi_4sXnjW2BpPRCHUl5-2kVK7PrspIi-8hIMcfZpaR2MtA6UyV0hmGshUtQ';
+let accessToken = ''
 let isPlaying = false;
 let activeDeviceId = null;
 
@@ -196,3 +196,4 @@ function updatePlayPauseButton() {
   const btn = document.getElementById('play-pause-btn');
   btn.textContent = isPlaying ? '⏸' : '▶️';
 }
+
