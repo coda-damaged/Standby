@@ -4,7 +4,7 @@ const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
 const SCOPES =
   'user-read-playback-state user-modify-playback-state user-read-currently-playing';
 const RESPONSE_TYPE = 'token';
-
+// an excuse
 let accessToken = null;
 let isPlaying = false;
 let activeDeviceId = null;
@@ -190,6 +190,7 @@ function updatePlayPauseButton() {
 
 document.getElementById('next-btn').addEventListener('click', () => controlPlayback('next'));
 document.getElementById('prev-btn').addEventListener('click', () => controlPlayback('previous'));
+
 
 
 
