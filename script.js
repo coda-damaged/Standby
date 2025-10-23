@@ -1,5 +1,5 @@
 const CLIENT_ID = '95611b1c29994911b89c1c209a517c29';
-const REDIRECT_URI = 'https://coda-damaged.github.io/Standby';
+const REDIRECT_URI = 'https://coda-damaged.github.io/Standby/callback.html';
 const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
 const SCOPES =
   'user-read-playback-state user-modify-playback-state user-read-currently-playing';
@@ -190,6 +190,7 @@ function updatePlayPauseButton() {
 
 document.getElementById('next-btn').addEventListener('click', () => controlPlayback('next'));
 document.getElementById('prev-btn').addEventListener('click', () => controlPlayback('previous'));
+
 
 
 
